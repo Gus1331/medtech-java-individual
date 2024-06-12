@@ -10,11 +10,6 @@ echo "\n\nATUALIZANDO O SISTEMA\n\n"
 #yes | sudo apt update
 #yes | sudo apt upgrade
 
-# NMON
-echo "\n\nINSTALANDO NMON\n\n"
-yes | sudo apt install nmon
-sudo nmon -f -s 5 -c 10
-
 # JDK
 java --version
 

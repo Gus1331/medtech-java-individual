@@ -85,7 +85,7 @@ public class Computador {
 
     // percorrer a lista de % de consumo de discos e pegar o maior número da lista
     public Double getDiscoComMaisConsumo(List<Long>porcentagemVolumes){
-        Optional<Double> menorPorcentDisco = porcentagemVolumes.stream()
+            Optional<Double> menorPorcentDisco = porcentagemVolumes.stream()
                 .map(e -> e.doubleValue())
                 .max(Comparator.naturalOrder());
 
